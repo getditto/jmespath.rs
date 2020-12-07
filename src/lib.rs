@@ -359,7 +359,7 @@ impl ToJmespath for bool {
 pub struct Expression<'a> {
     ast: Ast,
     expression: String,
-    runtime: &'a Runtime,
+    pub runtime: &'a Runtime,
 }
 
 impl<'a> Expression<'a> {
